@@ -1,0 +1,33 @@
+
+<ion-content padding>
+
+    <h3 class="joulogin">Journey</h3>
+
+    <ion-list>
+        <ion-item>
+          <ion-label floating>Username</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+      
+        <ion-item>
+          <ion-label floating>Password</ion-label>
+          <ion-input type="password"></ion-input>
+        </ion-item>
+      
+      </ion-list>
+
+      <div>
+        <button ion-button full (click)="onGoToHomePage()">เข้าสู่ระบบ</button>
+      </div>
+      <div>
+        <button ion-button full color="danger" (click)="onGoToRegisterPage()">ลงทะเบียน</button>
+      </div>
+
+      <div>
+          <ion-icon ios="logo-facebook" md="logo-facebook" class="facebutton"></ion-icon>
+          <ion-icon ios="logo-google" md="logo-google" class="goobutton"></ion-icon>
+      </div>
+     
+     
+      
+</ion-content>

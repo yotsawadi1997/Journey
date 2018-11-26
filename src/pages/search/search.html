@@ -1,0 +1,29 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>ค้นหา</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <div class="sear">
+    <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+    <ion-list>
+      <ion-item *ngFor="let item of items">
+        {{ item }}
+      </ion-item>
+    </ion-list>
+    </div>
+
+    <ion-segment [(ngModel)]="relationship" color="primary" (ionChange)="segmentChanged($event)">
+        <ion-segment-button value="searchplace" (click)="onGoToSearchplace()">
+          ค้นหาสถานที่
+        </ion-segment-button>
+        <ion-segment-button value="searchtrip">
+          ค้นหาแผน
+        </ion-segment-button>
+      </ion-segment>
+
+</ion-content>
